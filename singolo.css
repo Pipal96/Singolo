@@ -36,7 +36,7 @@ body {
 
 .header__background {
     width: 1020px;
-    height: 89px;
+    height: 95px;
     background-color: #2d303a;
 }
 
@@ -48,6 +48,7 @@ h1 {
     line-height: 10.32px;
     text-transform: uppercase;
     font-family: "Lato-Bold", sans-serif;
+    padding-top: 9px;
 }
 
 h1 span {
@@ -64,11 +65,12 @@ ul {
 
 .header__li {
     display: inline-block;
+    margin-top: 9px;
 }
 
 .header__li_dot::after {
     content: "·";
-    margin: 0 10px;
+    margin: 0 9px;
     color: #494e62;
 }
 
@@ -79,9 +81,18 @@ ul {
     font-weight: 700;
     line-height: 6.32px;
     text-transform: uppercase;
+    padding: 10px 0;
 }
 
 .header__li a:hover {
+    color: #f06c64;
+}
+
+.header__li a:active {
+    color: #c93a32;
+}
+
+.header__li_active a {
     color: #f06c64;
 }
 
@@ -92,7 +103,7 @@ ul {
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    height: 84px;
+    height: 89px;
     padding: 0 40px;
 }
 
@@ -113,11 +124,17 @@ ul {
 .block-one__button {
     background-color: transparent;
     border: none;
+    display: flex;
 }
 
 .block-one__button:active {
-    background-color: #d17a76;
+    background-color: #df5f58;
     cursor: pointer;
+}
+
+.block-one__button:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px;
 }
 
 .block-one__button:hover {
@@ -134,6 +151,7 @@ ul {
 
 .block-one__arrow {
     justify-self: center;
+    margin-bottom: 11px;
 }
 
 .blck-one__phone-left {
@@ -303,7 +321,7 @@ ul {
     font-weight: 400;
     line-height: 17.86px;
     padding: 69px 0 0 0;
-    margin: 0 0 26px 0;
+    margin: 0 0 8px 0;
 }
 
 .block-two__top-paragraph {
@@ -313,6 +331,9 @@ ul {
     font-weight: 300;
     line-height: 30px;
     letter-spacing: -0.08px;
+    width: 939px;
+    height: 78px;
+    overflow: hidden;
 }
 
 .block-two__circle-image {
@@ -339,14 +360,16 @@ ul {
     margin: 27px 0 0 0;
 }
 
-.block-two__paragraph-content {
+.block-two__paragraph-content p {
     font-family: "Lato-Regular";
     width: 220px;
-    height: 54px;
+    height: 67px;
+    overflow: hidden;
     color: #767e9e;
     font-size: 12px;
     font-weight: 400;
     line-height: 21.56px;
+    margin-bottom: 0px;
 }
 
 .block-two__line-conent {
@@ -357,7 +380,7 @@ ul {
 }
 
 .block-two__line-conent_margin {
-    margin: 13px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 .block-two__footer-line {

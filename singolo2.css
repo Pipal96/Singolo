@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "Lato-black";
+    src: url("assets/Lato-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("assets/Lato-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("assets/Lato-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("assets/Lato-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1020px;
+}
+
+/* BLOCK-THREE */
+
+.block-three {
+    width: 1020px;
+    min-height: 870px;
+    background-color: #2d303a;
+}
+
+.block-three__mine-headline h2 {
+    width: 121px;
+    height: 23px;
+    color: #666d89;
+    font-family: "Lato-black";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 17.86px;
+}
+
+.block-three__subtitle p {
+    width: 682px;
+    height: 17px;
+    color: #767e9e;
+    font-family: "Lato-Light";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.block-three__wrapper {
+    max-width: 940px;
+    margin: auto;
+    padding: 45px 0 0 1px;
+    box-sizing: border-box;
+}
+
+.block-three__box-button {
+    display: flex;
+    padding-top: 2px;
+    margin-bottom: 20px;
+}
+
+.block-three__button button {
+    border: 1px solid #666d89;
+    color: #767e9e;
+    font-family: "Lato-Regular";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    background-color: transparent;
+    border-radius: 4px;
+    display: flex;
+    cursor: pointer;
+    padding: 1px 6px;
+}
+
+.block-three__button button:hover {
+    color: #dedede;
+    border: 1px solid #c5c5c5;
+}
+
+.block-three__button button:focus {
+    color: #dedede;
+    box-shadow: 0px 0px 2px 1px;
+    outline: none;
+}
+
+.block-three__button button:active {
+    color: #dedede;
+    box-shadow: 0px 0px 4px 2px;
+    transition: 0.1s;
+}
+
+.block-three__button_active button {
+    color: #dedede;
+    border: 1px solid #c5c5c5;
+}
+
+.block-three__button_position {
+    margin-right: 10px;
+}
+
+.block-three__box-gallery {
+    display: grid;
+    grid-template-rows: repeat(3, 187px);
+    grid-template-columns: repeat(4, 220px);
+    grid-gap: 20px;
+}
+
+.block-three_line-background {
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+}
+
+.block-three__box-gallery {
+    overflow: hidden;
+    height: 601px;
+}
+
+.block-three__image-box:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+/* BLOCK-FOUR */
+
+.block-four {
+    width: 1020px;
+    height: 728px;
+    background-color: #f2f2f2;
+}
+
+.block-four__main-headline h2 {
+    color: #666d89;
+    font-family: "Lato-black";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 17.86px;
+}
+
+.block-four__main-paragraph p {
+    color: #767e9e;
+    font-family: "Lato-Light";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.block-four__main-paragraph_margin {
+    margin-bottom: 45px;
+}
+
+.block-four__box-position {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-four__box-column {
+    width: 300px;
+}
+
+.block-four__name h3 {
+    color: #666d89;
+    font-family: "Lato-black";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17.86px;
+    white-space: nowrap;
+    margin: 12px 0 12px 0;
+}
+
+.block-four__about-employee p {
+    width: 301px;
+    height: 32px;
+    color: #767e9e;
+    font-family: "Lato-Regular";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+    letter-spacing: -0.05px;
+}
+
+.block-four__about-employee_margin {
+    margin-bottom: 33px;
+}
+
+.block-four__social {
+    display: flex;
+}
+
+.block-four_icon-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #666d89;
+    border-radius: 60px;
+}
+.block-four_icon-social:hover {
+    background-color:  #dfdfdf;
+}
+
+.block-four_icon-social a {
+    padding: 8px;
+}
+
+.block-four__social_margin {
+    margin-right: 6px;
+}
+
+.block-four_footer-line {
+    width: 1020px;
+    height: 6px;
+}
