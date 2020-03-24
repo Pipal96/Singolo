@@ -1,4 +1,5 @@
 const MENU = document.getElementById("menu");
+const ANCHOR = document.querySelectorAll('a[href*="#"')
 
 
 MENU.addEventListener("click", (event) => {
@@ -7,3 +8,14 @@ MENU.addEventListener("click", (event) => {
 
     event.target.parentElement.classList.add("header__li_active");
 })
+
+for (let anchors of ANCHOR) {
+    anchors.addEventListener("click", function (event) {
+        event.preventDefault();
+        const BLOCKid = anchors.getAttribute('href');
+        document.querySelector("" + BLOCKid).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        })
+    })
+}

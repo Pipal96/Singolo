@@ -156,7 +156,7 @@ ul {
 }
 
 .blck-one__phone-left {
-    width: 215px;
+    max-width: 215px;
     height: 458px;
     background-color: #f2f2f2;
     border-radius: 27px;
@@ -167,7 +167,7 @@ ul {
 }
 
 .blck-one__phone-rigth {
-    width: 458px;
+    max-width: 458px;
     height: 215px;
     background-color: #f2f2f2;
     border-radius: 27px;
