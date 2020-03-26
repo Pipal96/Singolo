@@ -19,3 +19,15 @@ for (let anchors of ANCHOR) {
         })
     })
 }
+
+/* Media Query */
+
+const AddText = window.matchMedia(`(max-width:980px)`);
+
+if (AddText.matches) {
+    let text = document.getElementById("edit-text").querySelector("p");
+    text.textContent = `Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem 
+    nec elit.`;
+}
+
+// Пометки для себя* Код добавляет текст в блок, его минус, проверка работает не динамически, а только после обновлении страницы.
