@@ -22,12 +22,21 @@ for (let anchors of ANCHOR) {
 
 /* Media Query */
 
-const AddText = window.matchMedia(`(max-width:980px)`);
+const SIZE = window.addEventListener("resize", function () {
+    const AddText = window.matchMedia(`(max-width:980px)`);
+    const AddTextTwo = window.matchMedia(`(min-width:981px)`);
 
-if (AddText.matches) {
-    let text = document.getElementById("edit-text").querySelector("p");
-    text.textContent = `Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem 
+
+    if (AddText.matches) {
+
+        let text = document.getElementById("edit-text").querySelector("p");
+        text.textContent = `Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem 
     nec elit.`;
-}
+    } else if (AddTextTwo.matches) {
+        let text = document.getElementById("edit-text").querySelector("p");
+        text.textContent = `Duis mollis, est non commodo luctus, nisi erat porttitor ligula`;
+    }
+})
 
-// Пометки для себя* Код добавляет текст в блок, его минус, проверка работает не динамически, а только после обновлении страницы.
+// Пометки для себя* Код добавляет текст в блок. 
+//Пожалуйста не крутите пальцем у виска, я просто учусь :)

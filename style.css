@@ -501,7 +501,7 @@ ul {
 }
 
 .block-four__main-paragraph_margin {
-    margin-bottom: 45px;
+    margin-bottom: 47px;
 }
 
 .block-four__box-position {
@@ -1060,7 +1060,7 @@ ul {
     }
 
     .block-four__main-paragraph p {
-        margin: 18px 40px;
+        margin: 27px 40px 0px;
         text-align: justify;
     }
 
@@ -1075,7 +1075,7 @@ ul {
     }
 
     .block-three__box-button {
-        margin: 0 40px 20px;
+        margin: 0 40px 28px;
     }
 
     .block-three__box-gallery {
@@ -1083,10 +1083,19 @@ ul {
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(3, 1fr);
         height: 800px;
+        grid-gap: 10px 0px;
+        margin: 0 30px 0 27px;
     }
 
     .block-three__box-gallery:nth-child(1n)>div {
         justify-self: center;
+        width: 217px;
+        height: 184px;
+    }
+
+    .block-three__box-gallery img {
+        height: auto;
+        width: 100%;
     }
 
     .block-three {
@@ -1125,7 +1134,7 @@ ul {
     }
 
     .block-three__wrapper {
-        padding: 70px 0 0 1px;
+        padding: 62px 0 0 0;
     }
 
     /* BLOCK-FIVE */
@@ -1134,13 +1143,29 @@ ul {
         margin: 0 40px 17px;
     }
 
+    .block-four {
+        height: 662px;
+    }
+
+    .block-four__main-paragraph_margin {
+        margin-bottom: 37px;
+    }
+
+    .block-four__name h3 {
+        margin: 9px 0 0 0;
+    }
+
+    .block-four__about-employee_margin p {
+        margin: 3px 0 11px;
+    }
+
     .block-five__mine-paragraph p {
         width: auto;
         height: auto;
     }
 
     .block-five__input-box_margin {
-        margin: 19px 40px 0;
+        margin: 27px 38px 0;
     }
 
     .block-five__input,
@@ -1158,15 +1183,50 @@ ul {
         max-width: 301px;
         height: auto;
         width: auto;
+        line-height: 22.56px;
+    }
+
+    .block-five__wrapper {
+        padding: 62px 0 0 1px;
+    }
+
+    .block-five__section-block-rigth_margin {
+        margin-left: 30px;
+    }
+
+    .block-five__contact-headline_margin h3 {
+        margin-bottom: 7px;
+    }
+
+    .block-five__input_margin {
+        margin: 0 0 12px 0;
+    }
+
+    .block-five__contact-paragraph p {
+        margin: 6px 0 0 0;
+    }
+
+    .block-five__box-link_margin {
+        margin-top: 7px;
+    }
+
+    .block-five__input_margin input,
+    .block-five__textarea textarea {
+        padding-left: 10px;
+    }
+
+    .block-five__textarea textarea {
+        padding: 5px 0 0 15px;
+        height: 159px;
+        margin-bottom: 13px;
+    }
+
+    .block-five {
+        height: 626px;
     }
 }
 
-@media all and (max-width: 800px) {
-    .block-three__box-gallery {
-        grid-gap: 10px 0;
-        margin: 0 25px;
-    }
-}
+@media all and (max-width: 800px) {}
 
 @media all and (max-width:720px) {
     .block-two__line-conent {
