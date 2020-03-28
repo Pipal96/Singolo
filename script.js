@@ -40,3 +40,14 @@ const SIZE = window.addEventListener("resize", function () {
 
 // Пометки для себя* Код добавляет текст в блок. 
 //Пожалуйста не крутите пальцем у виска, я просто учусь :)
+
+function showMenu() {
+    let transform = document.getElementById("nav-header-mobile");
+    transform.addEventListener("click", function (e) {
+        e.preventDefault();
+        const ELEM = document.
+        if()){
+
+        }
+    })
+}
