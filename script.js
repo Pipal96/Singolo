@@ -41,13 +41,27 @@ const SIZE = window.addEventListener("resize", function () {
 // Пометки для себя* Код добавляет текст в блок. 
 //Пожалуйста не крутите пальцем у виска, я просто учусь :)
 
-function showMenu() {
-    let transform = document.getElementById("nav-header-mobile");
-    transform.addEventListener("click", function (e) {
-        e.preventDefault();
-        const ELEM = document.
-        if()){
+// function showMenu() {
+//     let transform = document.getElementById("nav-header-mobile");
+//     transform.addEventListener("click", function (e) {
+//         e.preventDefault();
+//         const ADDstyle = document.getElementById("header__nav-mobile-line");
+//         ADDstyle.classList.toggle("showEffect")
+//     })
+// }
 
-        }
-    })
+
+// const ELEM = document.getElementById("nav-header-mobile");
+// const ELEManchor = document.getElementById("effect");
+// ELEManchor.addEventListener("click", function (e) {
+//     e.classList.toggle("showEffect");
+// });
+
+/* ПРИМЕРЫ ВЫШЕ ЭТО ПОПЫТКИ НАПИСАТЬ АНИМАЦИЮ */
+
+const ANCHORR = document.getElementById("effect");
+const SPAN = document.getElementById("nav-header-mobile")
+
+function showMenu() {
+    SPAN.classList.toggle("showEffect")
 }

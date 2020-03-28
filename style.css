@@ -59,6 +59,10 @@ body {
     transition: 0.5s;
 }
 
+.showEffect {
+    transform: rotate(90deg);
+}
+
 .header__nav-mobile-line::before,
 .header__nav-mobile-line::after {
     content: "";
