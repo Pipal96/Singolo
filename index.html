@@ -11,18 +11,33 @@
 <body>
     <header>
         <section>
-            <a href="#" name="home"></a>
             <div class="header__background">
-                <div class="header__nav-mobile"><a onclick="showMenu()" id="effect" href="#menu">
+                <div class="header__nav-mobile"><a onclick="showMenu(), showHidden(), showLogo()" id="effect"
+                        href="#menu-mobile">
                         <span class="header__nav-mobile-line" id="nav-header-mobile"></span>
                     </a></div>
+
+                <div class="header__nav-mobile-flex" id="hidden-mobile">
+                    <nav>
+                        <a href="#" name="home"></a>
+                        <ul id="menu" class="header-mobile__menu">
+                            <li class="header__li_mobile header__li_active"><a href="#home">HOME</a></li>
+                            <li class="header__li_mobile"><a href="#services">SERVICES</a></li>
+                            <li class="header__li_mobile"><a href="#portfolio">PORTFOLIO</a></li>
+                            <li class="header__li_mobile"><a href="#about">ABOUT</a></li>
+                            <li class="header__li_mobile"><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
                 <div class="header__wrapper">
 
-                    <div class="header__logo">
+                    <div class="header__logo" id="logo">
                         <h1>SINGOLO<span>*</span></h1>
                     </div>
                     <div class="header__nav">
                         <nav>
+                            <a href="#" name="home"></a>
                             <ul id="menu">
                                 <li class="header__li header__li_dot header__li_active"><a href="#home">HOME</a></li>
                                 <li class="header__li header__li_dot"><a href="#services">SERVICES</a></li>
@@ -202,8 +217,7 @@
                         </article>
                     </div>
                 </div>
-        </div>
-        </section>
+            </section>
         </div>
         <div class="block-two__footer-line"></div>
 

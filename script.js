@@ -61,7 +61,21 @@ const SIZE = window.addEventListener("resize", function () {
 
 const ANCHORR = document.getElementById("effect");
 const SPAN = document.getElementById("nav-header-mobile")
+const MenuMobileSlide = document.getElementById("hidden-mobile")
+const LogoTransform = document.getElementById("logo");
 
 function showMenu() {
-    SPAN.classList.toggle("showEffect")
+    SPAN.classList.toggle("showEffect");
 }
+
+function showHidden() {
+    MenuMobileSlide.classList.toggle("header__nav-mobile-flex_hidden");
+}
+
+function showLogo() {
+    LogoTransform.classList.toggle("logo-transform");
+}
+
+// ANCHORR.addEventListener("click", function (e) {
+//     SPAN.classList.toggle("showEffect");
+// })
