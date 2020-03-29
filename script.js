@@ -1,5 +1,5 @@
 const MENU = document.getElementById("menu");
-const ANCHOR = document.querySelectorAll('a[href*="#"')
+const ANCHOR = document.querySelectorAll('a[href*="#"');
 
 
 MENU.addEventListener("click", (event) => {

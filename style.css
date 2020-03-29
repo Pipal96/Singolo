@@ -44,7 +44,7 @@ body {
     z-index: 1;
     transition: 1s;
     transform: translateX(-100%);
-    opacity: 0;
+    display: none;
 }
 
 .header__background {
@@ -59,7 +59,7 @@ body {
 
 .header__nav-mobile-flex_hidden {
     transform: translateX(0%);
-    opacity: 1;
+    display: block;
 }
 
 .logo-transform {
@@ -1629,5 +1629,27 @@ ul {
     .header__nav-mobile-line::before,
     .header__nav-mobile-line::after {
         display: block;
+    }
+}
+
+@media all and (max-width:370px) {
+    .block-one__content {
+        grid-template-columns: 25px 1fr 1fr 27px;
+    }
+
+    .blck-one__phone-left_margin-two {
+        margin-left: 5px;
+    }
+
+    .block-two__line-conent {
+        margin: 30px 0 0 15px;
+    }
+
+    .block-three__box-button {
+        margin: 14px 15px 25px;
+    }
+
+    .block-three__box-gallery {
+        margin: auto;
     }
 }
